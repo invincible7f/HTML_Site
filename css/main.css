@@ -1,0 +1,701 @@
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+background-image: url('../images/guy-light-body-caucasian-abdominal.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+body p {
+
+ cursor: default;
+
+}
+body h1 {
+
+    cursor: default;
+   
+   }
+   body h2 {
+
+    cursor: default;
+   
+   }
+/* =========================================Header================================================== */
+
+
+header{
+height: 80px;
+width: 940px;
+margin-left: 25%;
+background-color: rgb(244, 249, 247);
+z-index: 1;
+
+}
+
+header ul{
+
+margin-left: 570px;
+margin-top: 20px;
+list-style: none;
+position: relative;
+top: 30px;
+
+
+}
+header ul li{
+margin-left:30px;
+margin-top: 100px;
+text-decoration: none;
+font-size: 15px;
+text-align: left;
+display: inline;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
+
+}
+
+/* ==========================================SportClub==================================================== */
+
+#club_description{
+    height: 629px;
+    width: 940px;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#club_description h1{
+
+    position: absolute  ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 90px;
+    font-weight: 800;
+    top: 550px;
+    left: 687px
+
+}
+
+#club_description_textAndButton{
+
+ width: 50%;
+ height: 100%;
+ background-color:rgb(56, 45, 35);
+
+
+}
+
+
+#club_description_textAndButton p{
+
+    
+    margin: 80px;
+    margin-top: 100px;
+   
+    width: 300px;
+    color: aliceblue;
+    font-size: 20px;
+    word-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+#join_now_button{
+    
+    border: 1px solid aliceblue;
+    height: 46px;
+    width: 195px;
+    margin-left: 80px;
+    margin-top: -30px;
+
+
+} 
+#join_now_button p{
+ width: 120px;
+ height: 100%;
+ font-size: 20px;
+ margin-left: 50px;
+ margin-top: 7px;
+ /* background-color: aqua; */
+cursor: default;
+
+}
+
+
+
+#club_description_image{
+    /* display: flex;
+    justify-content: center; */
+    background-image: url("../images/close-up-athlete-training.jpg");
+    background-size:cover;
+    width: 50%;
+    height: 100%;
+  
+    
+}
+
+
+
+
+
+
+
+
+/* ===========================================AboutGym========================================== */
+
+
+
+#about_gym{
+
+    background-color: rgb(255, 231, 145);
+    height: 629px;
+    width: 940px;
+    margin-left: 25%;
+
+
+}
+
+#about_gym h1{
+    padding: 30px;
+   color:black;
+   font-size: 50px;
+   text-align: center;
+   font-weight: 500;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   cursor: default;
+
+}
+#about_gym h2{
+    color:black;
+    font-size: 25px;
+    margin-left: 150px;
+    margin-top: -30px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+ 
+ }
+
+
+ #about_gym p{
+   margin-top: 30px;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 200;
+   cursor: default;
+
+ }
+
+
+
+
+ #about_gym img{
+    margin-top: 40px;
+    margin-left: 40px;
+    height: 45%;
+    position: relative;
+    left: 110px;
+    z-index: 1;
+
+ }
+
+
+ #button{
+
+width: 150px;
+margin-left: 400px;
+ }
+ 
+ 
+ #button p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 2px solid rgb(230, 122, 122);
+    font-size: 18px;
+    
+
+
+ }
+
+ #red_block{
+  
+background-color: rgb(188, 63, 63);
+height: 150px;
+width: 800px;
+margin-left: 50px;
+position: relative;
+top: -280px;
+z-index: 0;
+
+
+
+ }
+
+/* ============================================================================================ */
+
+
+#about_training{
+    background-image: url(../images/cropped-photo-athletic-man-keeping-dumbbells.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+height: 1029px;
+width: 940px;
+margin-left: 25%;
+justify-content: center;
+}
+
+#training_program{
+   
+    display: flex;
+    margin-top: 350px;
+    height: 569px;
+    width: 720px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.types_of_training{
+width: 340px;
+height: 270px;
+margin: 10px;
+background-color: rgb(241, 105, 105);
+
+
+}
+.types_of_training div{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: white;
+height: 100px;
+width: 100px;
+border-radius: 100px;
+scale: 0.6;
+margin-left: 10px;
+
+} 
+
+.types_of_training img{
+/* background-color: aqua; */
+margin-top: -10px;
+position: absolute;
+scale: 0.5;
+
+}
+.types_of_training h1{
+
+margin: 30px;
+margin-top: -5px;
+color: aliceblue;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.types_of_training p{
+    margin: 30px;
+    margin-top: -20px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;;
+   
+
+}
+
+
+
+/* ====================================================IncreaseMotivation============================================================================= */
+
+
+
+#increase_motivation{
+    display: flex;
+    height: 653;
+    width: 940px;
+    margin-left: 25%;
+
+
+}
+#increase_motivation_picture{
+display: flex;
+justify-content:center;
+background-color: rgb(255, 231, 145);
+width: 50%;
+}
+
+#increase_motivation_picture img{
+
+height: 300px;
+margin-top: 180px;
+
+
+}
+
+#increase_motivation_textBlock{
+   
+   
+    background-color: aliceblue;
+    width: 50%;
+   
+
+}
+
+#increase_motivation_textBlock h1{
+
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+    font-weight: 500;
+}
+
+
+#increase_motivation_textBlock p {
+
+    margin: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    word-spacing: 5px;
+    font-weight: 350;
+
+    
+    cursor: default;
+
+}
+#increase_motivation_textBlock img{
+    margin: 30px;
+    height: 300px;
+
+
+}
+
+/* ====================================================ClubIsOpen============================================================================= */
+
+
+#sportclub_is_open{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    
+    height: 362px;
+    width: 940px;
+    margin-left: 25%;
+    background-color:  rgb(241, 105, 105);
+   
+
+}
+
+#sportclub_is_open h2{
+  margin-top: 50px;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+#sportclub_is_open p{
+   
+   
+    text-align: center;
+    /* background-color: aliceblue; */
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    width: 700px;
+    margin-left: 120px;
+    margin-top: 20px;
+
+}
+
+#sportclub_is_open button{
+    
+width: 184px;
+height: 42px;
+margin-top: 40px;
+margin-left: 390px;
+color: tomato;
+
+
+}
+
+
+/* ====================================================MensWorkaut============================================================================= */
+
+#mens_workaut{
+    display: flex;
+    height: 670px;
+    width: 940px;
+    margin-left: 25%;
+    background-color: black;
+}
+
+
+#workaut_picture_and_block{
+
+ width: 50%;
+ 
+
+
+}
+
+#workaut_picture_and_block img{
+
+height: 600px;
+margin: 40px;
+
+
+
+}
+
+
+#join_now{
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+position: relative;
+background-color: aliceblue;
+top: -400px;
+width: 320px;
+margin-left: 150px;
+height: 253px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#join_now h2{
+
+text-align: right;
+
+margin-top: 30px;
+margin-right: 20px;
+font-size: 35px;
+font-weight: 500;
+
+}
+
+#join_now p{
+
+    text-align: center;
+    font-weight: 1000;
+    
+    }
+
+#mens_workaut_button{
+    display: flex;
+    justify-content: center;
+    margin-left: 101px;
+    margin-top: 20px;
+ width: 195px;
+ height: 46px;
+ border: 2px solid tomato;
+ 
+
+}
+
+
+#mens_workaut_button a{
+
+text-align: center;
+margin-top: 10px;
+text-decoration: none;
+color:rgb(31, 31, 31)
+
+}
+  
+
+
+
+
+#mens_workaut_description{
+    /* display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap; */
+    width: 50%;
+     /* background-color: aquamarine; */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: aliceblue;
+     
+}
+
+
+#mens_workaut_description img{
+    position: relative;
+margin: 40px;
+margin-left: 30px;
+  height: 300px;
+  z-index: 1;
+}
+
+
+#mens_workaut_description h2{
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+
+#mens_workaut_description p{
+
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 320px;
+    
+    font-size: 20px;
+}
+
+#red_background{
+
+ position: relative;
+ height: 200px;
+ width: 300px;
+ background-color: rgb(241, 105, 105);
+ top: -460px;
+ left: 130px;
+ z-index: 0;
+
+}
+
+
+/* ============================================================Form==================================== */
+
+#contacts{
+    background-image: url('../images/3d-gym-equipment.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 755px;
+    width: 940px;
+    margin-left: 25%;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+form{
+margin-top: 90px;
+background-color: aliceblue;
+width: 642px;
+height: 564px;
+display: grid;
+grid-template-areas: 
+"header header "
+"input input2"
+"input3 input4"
+"textarea textarea"
+"submit submit";
+    gap: 40px;
+ grid-template-columns: 45% 55%;
+
+}
+
+#header {
+    
+margin: 0;
+width: 642px; ;
+
+grid-area: header;
+font-size: 30px;
+
+
+}
+
+#header h2{
+font-weight: 500;
+text-align: center;
+margin-top:30px;
+
+}
+
+#adress, #name{
+
+    margin-top: -30px
+
+}
+
+#adress, #phone{
+font-size: 20px;
+margin-left: 30px;
+
+width: 200px;
+}
+
+
+
+#name,#date{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#phone,#date{
+
+    margin-top: -30px;
+
+
+}
+
+
+#adress{
+
+    grid-area: input;
+}
+#name {
+
+    grid-area:input2 ;
+}
+
+#phone{
+
+
+    grid-area:input3 ;
+}
+
+#date{
+
+grid-area: input4;
+
+} 
+
+
+
+
+form button{
+    width: 110px;
+    height: 46px;
+    grid-area: submit;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: -60px;
+    background-color: black;
+    color: aliceblue;
+}
+
+form input{
+
+height: 50px;
+width: 270px;
+margin-top: 10px;
+font-size: 20px;
+}
+
+form textarea{
+    width:582px ;
+    font-size: 20px;
+   grid-area: textarea;
+   margin: 30px;
+   margin-top: -20px;
+   height: 150px;
+
+}
