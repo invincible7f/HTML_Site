@@ -972,50 +972,81 @@ form textarea{
     }
 
     /* Contacts / Form */
-    #contacts {
-        display: flex;
-        
-        padding: 12px;
+     #contacts {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 18px 12px;
         background-size: cover;
         background-position: center;
-    }
-    form {
-  
-             display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-        max-width: 720px;
-        margin: 12px auto;
-        padding: 12px;
-   
-   
-        gap: 50px;
-     
-        height: auto;
-    }
-    #header {  font-size: 22px; margin: 0 auto; }
-   
-
-    form input, form textarea {
-        width: 300px;
-        font-size: 16px;
-        padding: 10px;
-        margin: 0;
-        
-    }
-    form textarea {
-        height: 120px;
-    }
-    form button {
-        width: 100%;
-        height: 44px;
-        margin: 0;
-        grid-area: submit;
-        font-size: 16px;
+        box-sizing: border-box;
     }
 
-
-
+  form {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "adress"
+        "name"
+        "phone"
+        "date"
+        "textarea"
+        "submit";
+    gap: 40px;
+    width: 100%;
+    max-width: 720px;
+    margin: 12px auto;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: auto;
 }
+
+/* назначение областей (в переопределении для мобильных) */
+#header { grid-area: header; text-align: center; font-size: 22px; margin: 0; }
+#adress  { grid-area: adress;  }
+#name    { grid-area: name;    }
+#phone   { grid-area: phone;   }
+#date    { grid-area: date;    }
+form textarea { grid-area: textarea; }
+form button   { grid-area: submit; }
+
+/* поля — на всю ширину контейнера */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    margin: 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* textarea */
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* кнопка отправки */
+form button {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
