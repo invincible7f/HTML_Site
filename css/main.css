@@ -28,11 +28,24 @@ body h1 {
    }
 /* =========================================Header================================================== */
 
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+
+
+}
 
 header{
 height: 80px;
 width: 940px;
-margin-left: 25%;
+
 background-color: rgb(244, 249, 247);
 z-index: 1;
 
@@ -62,23 +75,33 @@ cursor: pointer;
 
 /* ==========================================SportClub==================================================== */
 
+
+
 #club_description{
-    height: 629px;
-    width: 940px;
-    margin-left: 25%;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+   display: flex;
+  flex-wrap: wrap;
+  height: 629px;
+  max-width: 940px;
+  width: 100%;
+   
+
+  box-sizing: border-box;
+
+
+  
+  
 }
 
 #club_description h1{
 
-    position: absolute  ;
+    position: absolute ;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
-    font-size: 90px;
+    font-size: clamp( 70px,90px, 91px);
     font-weight: 800;
-    top: 550px;
-    left: 687px
+    top:  450px;
+    left:210px;
 
 }
 
@@ -97,7 +120,6 @@ cursor: pointer;
     
     margin: 80px;
     margin-top: 100px;
-   
     width: 300px;
     color: aliceblue;
     font-size: 20px;
@@ -107,32 +129,28 @@ cursor: pointer;
 }
 
 
-#join_now_button{
-    
-    border: 1px solid aliceblue;
-    height: 46px;
-    width: 195px;
-    margin-left: 80px;
-    margin-top: -30px;
-
-
-} 
-#join_now_button p{
- width: 120px;
- height: 100%;
- font-size: 20px;
- margin-left: 50px;
- margin-top: 7px;
- /* background-color: aqua; */
-cursor: default;
-
+#join_now_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: white;
+  width: clamp(100px, 15vw, 150px);
+  height: 46px;
+  border: 1px solid aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: -2rem;
+  margin-left: 80px;
 }
 
 
 
+
+
 #club_description_image{
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     background-image: url("../images/close-up-athlete-training.jpg");
     background-size:cover;
     width: 50%;
@@ -157,7 +175,7 @@ cursor: default;
     background-color: rgb(255, 231, 145);
     height: 629px;
     width: 940px;
-    margin-left: 25%;
+  margin: 0 auto;
 
 
 }
@@ -251,7 +269,7 @@ z-index: 0;
     flex-wrap: nowrap;
 height: 1029px;
 width: 940px;
-margin-left: 25%;
+ margin: 0 auto;
 justify-content: center;
 }
 
@@ -324,8 +342,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     height: 653;
     width: 940px;
-    margin-left: 25%;
-
+ margin: 0 auto;
 
 }
 #increase_motivation_picture{
@@ -390,7 +407,7 @@ margin-top: 180px;
     
     height: 362px;
     width: 940px;
-    margin-left: 25%;
+    margin: 0 auto;
     background-color:  rgb(241, 105, 105);
    
 
@@ -437,7 +454,7 @@ color: tomato;
     display: flex;
     height: 670px;
     width: 940px;
-    margin-left: 25%;
+ margin: 0 auto;
     background-color: black;
 }
 
@@ -578,7 +595,7 @@ margin-left: 30px;
     justify-content: center;
     height: 755px;
     width: 940px;
-    margin-left: 25%;
+    margin: 0 auto;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -699,354 +716,4 @@ form textarea{
    height: 150px;
 
 }
-
-/* =================== Media Queries =================== */
-
-
-@media (max-width: 600px) {
-
-    *, *::before, *::after { box-sizing: border-box; }
-
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
-        -webkit-text-size-adjust: 100%;
-    }
-
-    body {
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* Header */
-    header {
-        width: 100%;
-        margin: 0;
-        padding: 12px 16px;
-        height: auto;
-        background-color: rgb(244, 249, 247);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 2;
-    }
-    header ul {
-        position: static;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    header ul li {
-        display: inline-block;
-        margin: 0;
-        font-size: 14px;
-        line-height: 1;
-    }
-
-
-    #club_description,
-    #about_gym,
-    #about_training,
-    #increase_motivation,
-    #sportclub_is_open,
-    #mens_workaut,
-    #contacts {
-        width: 100%;
-        margin-left: 0;
-        padding: 16px;
-        height: auto;
-        display: block;
-        background-clip: padding-box;
-    }
-
-
-    #club_description {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
-    }
-    #club_description_textAndButton {
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(56, 45, 35);
-    }
-    #club_description_textAndButton p{
-        margin: 0 0 12px 0;
-        width: 100%;
-        color: aliceblue;
-        font-size: 16px;
-        line-height: 1.4;
-    }
-    #join_now_button {
-        width: 30vw;
-        max-width: 260px;
-        margin: 12px 0 0 0;
-        height: 46px;
-        border: 1px solid aliceblue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #join_now_button p {
-        height: 3vh;
-        width: 20vw;
-        margin: 0;
-        text-align: center;
-  
-        font-size: 16px;
-        line-height: 1;
-    }
-    #club_description h1 {
-        position: static;
-        font-size: 28px;
-        color: aliceblue;
-        font-weight: 800;
-        text-align: center;
-        margin: 8px 0 0 0;
-    }
-
-
-    #club_description_image {
-        width: 100%;
-        min-height: 180px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 8px;
-        box-shadow: none;
-        transition: min-height .25s ease;
-    }
-
-    /* About gym */
-    #about_gym {
-        padding: 18px;
-        
-    }
-    #about_gym h1 { font-size: 24px; padding: 6px 0; }
-    #about_gym h2 { font-size: 15px; margin: 8px 0 12px 0; text-align: center; margin-left: 0; }
-    #about_gym p { font-size: 15px; margin: 0 auto 12px auto; width: 100%; text-align: center; }
-    #about_gym img {
-        position: static;
-        margin: 12px auto 0 auto;
-        display: block;
-        width: 42%;
-        height: auto;
-        left: auto;
-    }
-    #button{
-        margin-top: 50px;
-         margin-left: 170px;
-
-  }
-    /* Red block */
-    #red_block {
-        display:none;
-        width: 92%;
-        margin: 12px auto;
-        position: static;
-        top: auto;
-        height: 80px;
-    }
-
-    /* Training */
-    #about_training {
-         display: flex;
- 
-        gap: 12px;
-        padding: 12px;
-        background-size: cover;
-        background-position: center;
-    }
-    #training_program {
-        display: flex;
-        flex-direction: column;
-        height: 200vh;
-        gap: 12px;
-        margin: 0 auto;
-        width: 50%;
-        margin-top: 8px;
-        align-items: center;
-    }
-    .types_of_training {
-        width: 92%;
-        max-width: 420px;
-        margin: 6px auto;
-        height: auto;
-        padding: 12px;
-        box-sizing: border-box;
-    }
-    .types_of_training h1,
-    .types_of_training p { font-size: 16px; }
-
-    /* Increase motivation */
-    #increase_motivation {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px;
-    }
-    #increase_motivation_picture,
-    #increase_motivation_textBlock {
-        width: 100%;
-        padding: 12px;
-    }
-    #increase_motivation_picture img,
-    #increase_motivation_textBlock img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-    #increase_motivation_textBlock p { font-size: 15px; margin: 8px 0; }
-
-    /* Sportclub is open */
-    #sportclub_is_open {
-        text-align: center;
-        padding: 18px 12px;
-    }
-    #sportclub_is_open h2 { font-size: 32px; margin-top: 8px; }
-    #sportclub_is_open p { font-size: 15px; width: 92%; margin: 12px auto; }
-    #sportclub_is_open button {
-        width: 92%;
-        max-width: 360px;
-        margin: 12px auto;
-        display: block;
-    }
-
-    /* Mens workout */
-    #mens_workaut {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px;
-        background-color: black;
-    }
-    #workaut_picture_and_block, #mens_workaut_description {
-        width: 100%;
-        padding: 0 6px;
-    }
-    #workaut_picture_and_block img, #mens_workaut_description img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-        margin: 8px 0;
-    }
-    #join_now {
-        position: static;
-        top: auto;
-        width: 92%;
-        margin: 12px auto;
-        height: auto;
-        padding: 12px;
-    }
-    #join_now h2 { font-size: 20px; text-align: center; margin: 6px 0; }
-    #join_now p { text-align: center; font-weight: 700; }
-
-    #mens_workaut_button {
-        width: 92%;
-        max-width: 320px;
-        margin: 12px auto;
-        justify-content: center;
-    }
-    #mens_workaut_button a { font-size: 15px; }
-
-    #mens_workaut_description h2 { font-size: 22px; margin: 8px 0; }
-    #mens_workaut_description p { font-size: 15px; width: 100%; margin: 8px 0; }
-
-    /* red background box */
-    #red_background {
-        display: none;
-        position: static;
-        width: 90%;
-        height: 100px;
-        margin: 12px auto;
-        top: auto;
-        left: auto;
-    }
-
-    /* Contacts / Form */
-     #contacts {
-        display: block;
-        width: 100%;
-        margin: 0;
-        padding: 18px 12px;
-        background-size: cover;
-        background-position: center;
-        box-sizing: border-box;
-    }
-
-  form {
-    background-color: aliceblue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "adress"
-        "name"
-        "phone"
-        "date"
-        "textarea"
-        "submit";
-    gap: 40px;
-    width: 100%;
-    max-width: 720px;
-    margin: 12px auto;
-    padding: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    border-radius: 10px;
-    box-sizing: border-box;
-    height: auto;
-}
-
-/* назначение областей (в переопределении для мобильных) */
-#header { grid-area: header; text-align: center; font-size: 22px; margin: 0; }
-#adress  { grid-area: adress;  }
-#name    { grid-area: name;    }
-#phone   { grid-area: phone;   }
-#date    { grid-area: date;    }
-form textarea { grid-area: textarea; }
-form button   { grid-area: submit; }
-
-/* поля — на всю ширину контейнера */
-form input,
-form select,
-form textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px 12px;
-    font-size: 16px;
-    margin: 0;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background: #fff;
-}
-
-/* textarea */
-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-/* кнопка отправки */
-form button {
-    width: 100%;
-    height: 48px;
-    font-size: 16px;
-    border-radius: 8px;
-    background-color: #111;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-
-
 

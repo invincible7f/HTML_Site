@@ -34,20 +34,17 @@ for(let i = 0; i < headerMenu.length; i++){
 
 
 button.onmouseover = function(){
-let font = document.querySelector('#join_now_text');
-font.style.color = 'red';
+
 this.style.borderColor = 'red';
+this.style.color= 'red';
 
 
 }
 
 
 button.onmouseleave = function() {
-    let font = document.querySelector('#join_now_text');
-
-   
-    font.style.color = 'white';
-    this.style.borderColor = 'white';
+   this.style.borderColor = '';
+this.style.color= '';
 
 }
 
